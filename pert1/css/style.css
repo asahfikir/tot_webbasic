@@ -1,0 +1,59 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #6a89cc;
+}
+
+div#container {
+    background: #FFF;
+    width: 900px;
+    margin: 150px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    /*
+    box-shadow: posX posY blurX blurY warna
+    margin: 150px; atas kanan bawah kiri 150px
+    margin: 150px auto; atas bawah 150px kiri kanan auto
+    margin: 150px auto 150px auto; atas 150 kanan auto bawah 150 kiri auto
+    margin-top: 150px;
+    margin-right: auto;
+    margin-bottom: 150px;
+    margin-left: 150px;
+    */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#logo {
+    background: #ddd;
+}
+
+header nav {}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+div#content {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+aside {
+    background: #ccc;
+    padding: 10px;
+    width: 300px;
+}
