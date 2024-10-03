@@ -4,11 +4,11 @@
 Pengenalan singkat HTML + CSS, tools yang digunakan serta tips dan tricks HTML CSS dasar.
 
 ## Bahasan
-1. Emmet
+### Emmet
 Text editor yang disarankan untuk digunakan adalah `Visual Studio Code` atau `Zed Editor`. Secara default text editor ini memiliki plugin Emmet yang dapat membantu kita mengetik kode dengan lebih cepat menggunakan autosuggestion dari Emmet.
 
 Contoh Penggunaan:
-a. Template HTML
+#### Template HTML
 Ketikkan `!` pada dokumen HTML kosong dan Emmet akan menghasilkan output berikut:
 ```html
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ Ketikkan `!` pada dokumen HTML kosong dan Emmet akan menghasilkan output berikut
 </html>
 ```
 
-b. Menghasilkan DOM kompleks secara otomatis
+#### Menghasilkan DOM kompleks secara otomatis
 Ketikkan `#container>header+(section#content>aside+main)+footer` dan Emmet akan menghasilkan output berikut:
 ```html
 <div id="container">
@@ -50,7 +50,7 @@ Simbol `>` digunakan untuk menghasilkan sub elemen dari elemen. Gunakan tanda ku
 ```
 Jika tidak dikelompokkan menggunakan tanda kurung `(...)` maka `footer` akan masuk sebagai sub elemen dari `section`.
 
-c. Pengulangan elemen
+#### Pengulangan elemen
 Untuk membuat banyak elemen sekaligus kita bisa menggunakan simbol `*`. Sebagai contoh `ul>li*3` akan menghasilkan:
 ```html
 <ul>
@@ -60,13 +60,13 @@ Untuk membuat banyak elemen sekaligus kita bisa menggunakan simbol `*`. Sebagai 
 </ul>
 ```
 
-d. Menghasilkan filler text
+#### Menghasilkan filler text
 Terkadang kita membutuhkan text dengan sebaran huruf yang cukup untuk mengisi konten sementara. Kita bisa menggunakan `lorem{jumlah kata}` untuk melakukan hal ini. Sebagai contoh `lorem50` akan menghasilkan:
 ```html
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi quo repudiandae exercitationem a iste totam laudantium nostrum et, suscipit voluptas, quisquam maiores, vero id. Minus, commodi esse officiis excepturi inventore ipsum officia accusamus nemo! Minus enim nemo voluptatum temporibus adipisci. Tempore, sapiente! Ab ullam optio labore corrupti pariatur culpa necessitatibus.
 ```
 
-2. Reset CSS
+### Reset CSS
 Secara default setiap browser memiliki styling default yang diterapkan ke setiap halaman web. Dan nilai default ini berbeda-beda untuk tiap browser. Agar tampilan halaman kita seragam, kita bisa menambahkan styling pada halaman web kita yang disebut dengan `Reset CSS`. Salah satu Reset CSS yang bisa kita gunakan adalah `Eric Meyer Reset CSS`. Cukup searching di Google untuk Reset CSS tersebut. Namun jika kita ingin membuat reset css kita sendiri yang paling sederhana adalah sebagai berikut:
 ```css
 *, *:before, *:after {
@@ -78,7 +78,7 @@ Secara default setiap browser memiliki styling default yang diterapkan ke setiap
 }
 ```
 
-3. Perbedaan `margin` dan `padding`
+### Perbedaan `margin` dan `padding`
 `margin` dan `padding` digunakan untuk memberikan jarak antar dua elemen. Perbedaannya terdapat pada posisi jarak yang akan diberikan. Jika kita ingin memberikan jarak luar antar satu elemen dengan elemen lain maka gunakan `margin`. Namun, jika kita ingin memberikan jarak antara elemen dengan elemen yang ada di `dalam`nya maka gunakan `padding`.
 ```
 -----------------              --------------
@@ -95,7 +95,7 @@ Secara default setiap browser memiliki styling default yang diterapkan ke setiap
 ----------------------------
 ```
 
-4. Layouting menggunakan Flex
+### Layouting menggunakan Flex
 Secara default elemen di HTML akan ditampilkan secara vertikal dari atas kebawah. Untuk bisa menampilkan elemen secara horizontal kita dapat menggunakan `flex`. Contoh penggunaan:
 ```html
 <ul>
