@@ -1,0 +1,76 @@
+/* Reset CSS */
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    /* background warna #444 kemudian load gambar di folder images */
+    /* gambar dibuat tidak berulang dan posisi ditengah */
+    background: #444 url('./images/galaxy-unsplash.jpg') no-repeat center;
+    /* ukuran gambar dibuat agar bisa `cover` seluruh layar */
+    background-size: cover;
+
+    /* buat element body menjadi flex */
+    display: flex;
+    /* content didalam flex dibuat ke tengah secara horizontal */
+    justify-content: center;
+    /* content didalam flex dibuat ke tengah secara vertical */
+    align-items: center;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+
+    width: 500px;
+    padding: 30px;
+
+    border-radius: 30px;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+div.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+label {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+input {
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 0;
+}
+
+button {
+    background: #FC0;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 0;
+    color: #444;
+    cursor: pointer;
+}
