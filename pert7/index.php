@@ -17,6 +17,10 @@ $db = new Database($dsn, "root");
 echo "SELECT * FROM posts WHERE id={$id}";
 $result = $db->query("SELECT * FROM posts WHERE id={$id}");
 
+/*
+Cara test: http://localhost:8000/?id=1 OR 1=1--
+*/
+
 
 echo "<h1>My Blog Posts</h1>";
 echo "<hr />";
