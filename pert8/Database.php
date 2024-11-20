@@ -12,10 +12,16 @@ class Database {
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
-    public function prepare($query, $params) {
+    public function prepare($query, $params = []) {
         $stmt = $this->pdo->prepare($query);
         $stmt->execute($params);
-        return $this;
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    public function first($query, $params = []) {
+        $stmt = $this->pdo->prepare($query);
+        $stmt->execute($params);
+        return $stmt->fetch(PDO::FETCH_OBJ);
     }
 
 }

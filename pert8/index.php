@@ -10,12 +10,13 @@ $db = new Database($dsn, "root");
 $routes = [
     '/' => 'controllers/home.php',
     '/posts' => 'controllers/posts.php',
+    '/post'  => 'controllers/post.php',
     '/about' => 'controllers/about.php',
     '/admin' => 'controllers/admin/index.php',
 ];
 
 // deteksi sedang berada di halaman mana?
-$uri = $_SERVER['REQUEST_URI'];
+$uri = $_SERVER['REQUEST_URI'] == '/' ? '/' : $_SERVER['PATH_INFO'];
 
 // Check apakah $uri ada pada array routes
 if (array_key_exists($uri, $routes)):

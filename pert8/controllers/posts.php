@@ -7,6 +7,11 @@
     <li class="border p-5 rounded shadow-md">
         <h3 class="font-bold"><?= $post->title ?></h3>
         <p><?= $post->body ?></p>
+        <div class="text-right border-t pt-5 mt-5">
+            <a href="/post?id=<?= $post->id ?>" class="text-indigo-700">
+                Baca Selengkapnya ...
+            </a>
+        </div>
     </li>
     <?php endforeach; ?>
 </ul>
